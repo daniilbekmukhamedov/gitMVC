@@ -1,0 +1,405 @@
+body{
+	padding:0px;
+	margin:0px;
+	font-size:17px;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: rgb(242, 242, 242);
+}
+
+a{
+	text-decoration:none;
+	color: black;
+}
+
+#header{
+	/* outline:1px solid red; */
+	height: 100px;
+    position: relative;
+    background-color: white;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 5px 0px #d9d9d9;
+}
+
+#headerWrap{
+	/* outline:1px solid rgb(8, 0, 255); */
+	height: 100px;
+    width: 1200px;
+    margin: auto;
+    position: relative;
+}
+
+#logo{
+	width: 175px;
+	height: 85px;
+	/* outline: 1px solid red; */
+	margin-top: 9px;
+	margin-left: 10px;
+	float: left;
+	background-image: url('/public/images/logo.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+#logo > a{
+	display: block;
+	width: inherit;
+	height: inherit;
+}
+
+#navigWrap{
+	/* outline:1px solid red; */
+    height: 50px;
+    width: 735px;
+	margin: 25px 45px;
+	float: left;
+}
+
+.navigItem{
+	/* outline: 1px solid red; */
+	height: 50px;
+	float: left;
+	width: calc(100%/3);
+	border-radius: 3px;
+    transition: all 0.2s linear;
+}
+
+.navigItemAdmin{
+	width: calc(100%/4) !important;
+}
+
+#admin-nav:hover #admin-list{
+	display: block;
+}
+
+#admin-list{
+	display: none;
+	width: 100%;
+	min-height: 50px;
+	background-color: white;
+	box-sizing: border-box;
+	border: 2px solid rgb(222, 222, 222);
+	border-radius: 0px 0px 5px 5px;
+	/* outline: 1px solid red; */
+}
+
+.admin-list-item{
+	width: 100%;
+	height: 50px;
+	border-radius: 3px;
+	background-color: white;
+	/* outline: 1px solid red; */
+	transition: all 0.2s linear;
+}
+
+.admin-list-item:hover{
+	background-color:#f0f0f0;
+}
+
+.navigItem:hover {
+	background-color:#f0f0f0;
+}
+
+.navigItemSpan{
+	display: block;
+	line-height: 50px;
+	text-align: center;
+	width: 100%;
+}
+
+#wrapper{
+	/* outline:1px solid red; */
+	width:1200px;
+	min-height: 800px;
+	margin:auto;
+	overflow:hidden;
+}
+
+#sidebar{
+    /* outline:1px solid orange; */
+	min-height:100px;
+	overflow:hidden;
+    width: 15%;
+    float: left;
+}
+
+.sidebar-li a{
+    color: rgb(74, 74, 74);
+    transition: all 0.2s linear;
+	line-height: 27px;
+}
+
+.sidebar-li a:hover{
+    color: rgb(137, 137, 137);
+}
+
+.content-wrap{
+	/* outline:1px solid green; */
+	overflow:hidden;
+    width: 100%;
+    float: left;
+    background-color: white;
+	box-shadow: 0px 0px 5px 0px #d9d9d9;
+	border-radius: 3px;
+	margin-bottom: 10px;
+}
+
+#wrapper-center{
+	/* outline:1px solid green; */
+    width: 70%;
+    float: left;
+}
+
+#right-bar{
+	/* outline:1px solid orange; */
+	min-height:100px;
+	overflow:hidden;
+    width: 15%;
+    float: left;
+}
+
+.content{
+    /* outline:1px solid blue; */
+	overflow:hidden;
+    width: 800px;
+    margin: auto;
+}
+
+#page-top{
+	margin-bottom: 20px;
+}
+
+.page-top{
+    margin: 40px auto;
+}
+
+.page-top > h1{
+	margin-left: 20px;
+	font-size: 30px;
+	font-weight: normal;
+	color: #1d1a66;
+}
+
+.unline{
+	height: 2px;
+	background-color: rgb(234, 234, 234);
+	margin: 10px auto;
+	border-radius: 1px;
+}
+
+.page-content{
+    /* outline: 1px solid red; */
+	overflow: hidden;
+}
+
+.index-news{
+	/* outline: 1px solid orange; */
+	overflow: hidden;
+	padding: 10px 20px;
+}
+
+.post{
+	/* outline: 1px solid orange; */
+	overflow: hidden;
+	padding: 10px 20px;
+}
+
+.index-news-text{
+	min-height: 100px;
+	/* outline: 1px solid purple; */
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.post-text{
+	min-height: 100px;
+	/* outline: 1px solid purple; */
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.index-news-text h2{
+	font-size: 23px;
+	font-weight: normal;
+	text-decoration: underline;
+	color: #1d1a66;
+	display: block;
+	margin-bottom: 3px;
+}
+
+.post-text > h2{
+	font-size: 23px;
+	font-weight: normal;
+	text-decoration: underline;
+	color: #1d1a66;
+	display: block;
+	margin-bottom: 3px;
+}
+
+.index-news-text > h3{
+	font-size: 17px;
+	font-weight: normal;
+}
+
+.post-text > h3{
+	font-size: 17px;
+	font-weight: normal;
+}
+
+.index-news-photo{
+	/* outline: 1px solid green; */
+	overflow: hidden;
+}
+
+.post-photo{
+	/* outline: 1px solid green; */
+	overflow: hidden;
+}
+
+.login-form{
+	width:300px;
+	padding: 30px;
+	padding-bottom: 55px;
+	border: 2px solid rgb(234, 234, 234);
+	border-radius: 5px;
+	margin: 25px auto;
+}
+
+.newsform{
+	/* outline:1px solid red; */
+	overflow:hidden;
+	margin-bottom: 50px;
+	margin-top: 20px;
+}
+
+input{
+	font-size: 17px;
+}
+
+#newsform-login{
+	width: 250px;
+	margin: auto;
+	padding-left: 8px;
+}
+
+.newsform input{
+	height:20px;
+	padding:7px;
+	width:90%;
+	border: 1px solid rgb(149, 149, 149);
+	border-radius: 5px;
+	margin-left: 20px;
+}
+
+#newsform-login input{
+	width:90%;
+	margin-left: 0px;
+}
+
+.newsform p{
+	font-size:18px;
+	margin-left: 20px;
+}
+
+#newsform-login p{
+	margin-left: 0px;
+}
+
+.newsform textarea{
+	width:90%;
+	min-height:280px;
+	padding:7px;
+	border: 1px solid rgb(149, 149, 149);
+	border-radius: 5px;
+	margin-left: 20px;
+	font-size: 17px;
+	font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.newsform input[type=file]{
+	border: none;
+}
+
+.newsform input[type=submit]{
+	width:225px;
+	margin-top:40px;
+	font-size: 20px;
+	height: 40px;
+	float:left;	
+	background-color: rgb(234, 234, 234);
+	transition: all 0.2s linear;
+}
+
+.newsform input[type=submit]:hover{
+	background-color: rgb(210, 210, 210);
+	border: 1px solid rgb(149, 149, 149);
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#login-submit{
+	margin-left: 7px !important;
+}
+
+#pagin{
+	margin-top: 20px;
+	background-color: inherit !important;
+	box-shadow: none;
+}
+
+.pagin-item{
+	/* outline: 1px solid red; */
+	width: 30px;
+	height: 30px;
+	float: left;
+	text-align: center;
+	line-height: 27px;
+}
+
+.pagin-item span{
+	transition: all 0.15s linear;
+}
+
+.pagin-item span:hover{
+	color: rgb(109, 109, 109);
+}
+
+.pagin-pointer{
+	width: 70px !important;
+	box-sizing: border-box;
+	border: 2px solid rgb(208, 208, 208);
+	border-radius: 3px;
+}
+
+.adminControls{
+	height: 23px;
+	/* outline: 1px solid red; */
+	margin: 10px 0px 15px 0px;
+	width: 140px;
+	/* border: 2px solid rgb(215, 215, 215); */
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.adminControlsItem{
+	height: inherit;
+	width: 70px;
+	text-align: center;
+	float: left;
+	line-height: 23px;
+	box-sizing: border-box;
+}
+
+.adminControlsItem span:hover{
+	color: rgb(110, 110, 110);
+}
+
+.newsItemName{
+	display: inline-block;
+}
+
+.date{
+	font-size: 13px !important;
+	margin-bottom: 15px;
+	color: rgb(183, 183, 183);
+	display: inline-block;
+}
